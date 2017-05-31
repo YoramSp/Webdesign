@@ -1,0 +1,162 @@
+/* RESPONSIVENESS*/
+
+@media screen and (min-width: 850px) and (max-width: 1365px){
+
+html{
+    margin: 0;
+    background-color: black;
+}
+body {
+    width: 100%;
+}
+nav{
+    position: relative;
+    width: 100%;
+    top: 5px;
+}
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d40000;
+}
+
+li {
+    float: left;
+    position: relative;
+    width: 10%;
+    left: 25%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+}
+
+li a:hover {
+    background-color: red;
+}
+
+
+.mySlides {
+    display:none;
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer;
+}
+
+.w3-badge {
+    height:13px;width:13px;padding:0;
+}
+
+main{
+    position: relative;
+    top: -10px;
+    margin-left: 5%;
+	margin-right: 5%;
+    right: auto;
+    z-index: -2;
+    background-color: white;
+    width: 90%;
+    height: 100%;
+
+}
+
+aside{
+	float: left;
+	margin-left: 3%;
+	margin-top: 100%;
+    top: 80%;
+    width: 90%;
+    height: 30%;
+	z-index: -1;
+    box-shadow: 5px 5px 10px #000;
+    background-color: rgba(234, 234, 234, 0.51);
+}
+
+.contactinfo{
+    width: 100%;
+    margin-botton: 0px;
+	flex-direction: column-reverse;
+}
+
+aside h1{
+   
+
+}
+
+.indexpic{
+    max-width: 300px;
+/*	transform: translate(-10px, -1100px);*/
+	flex-direction: column-reverse;
+}
+
+.left{
+	margin-right: 10px;
+}
+
+.one{
+	padding-left: 10%;
+}
+
+.two{
+	margin-top: 46px;
+	padding-left: 10%;
+}
+
+.three{
+	margin-top: 46px;
+	padding-left: 10%;
+}
+	
+.picture{
+	z-index: 5;	
+}
+
+article{
+    position: relative;
+    top: 6%;
+	margin-left: 32%;
+	margin-right: 2%;
+	text-align: justify;
+}
+
+article img {
+    padding-right: 25px;
+    padding-bottom: 5px;
+}
+
+#kawasaki{
+    float: left;
+}
+#kawasaki1{
+    position: relative;
+    left:200px;
+}
+#yamaha{
+    float: left;
+}
+#suzuki{
+    float: left;
+}
+#harley{
+    float: left;
+}
+}
+
+@media screen and (max-width: 850px)
+{
+	.indexpic{
+    max-width: 40%;
+}
+	hr{
+		display: none;
+	}
+}

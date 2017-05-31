@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Vertelt het apparaat dat het zijn eigen breedte moet houden (tegen eigenwijze apparaten)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Motor Idee</title>
+
+    <link href="styles.css" rel="stylesheet">
+	<link href="responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+<header>
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="mySlides" src="pictures/slider.jpg" style="width:100%">            <!-- hier moeten nog eigen fotos worden toegepast-->
+        <img class="mySlides" src="pictures/slider2.jpg" style="width:100%">
+        <img class="mySlides" src="pictures/slider3.jpg" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="pagina1.html">Kawasaki</a></li>
+        <li><a href="pagina2.html">Yamaha</a></li>
+        <li><a href="pagina3.html">Suzuki</a></li>
+        <li><a href="pagina4.html">Harley</a></li>
+    </ul>
+</nav>
+
+<main>
+    <aside id="contact">
+        <h1> Contactgegevens</h1>
+        <hr>
+        <p class="contactinfo">
+        
+        E-mail:
+        <br>
+        
+        m.vergunst@student.alfa-college.nl
+        of
+        y.spee@student.alfa-college.nl
+        <hr>
+        
+        Telefoonnummer: 0612345678
+        <hr>
+        Fax: 026-123123
+        <hr>
+        
+        Voor een offerte bel of mail ons gerust!
+        </p>
+
+    </aside>
+	<section class="one picture">
+        <img class="indexpic left" 		src="pictures/kawasaki.jpg" alt="x" />
+        
+        <img class="indexpic right" 	src="pictures/Ducati.jpg" 	alt="x" />
+	</section>
+	<section class="two picture">
+        <img class="indexpic left" 		src="pictures/suzuki.jpg" 	alt="x" />
+    
+ 		<img class="indexpic right" 	src="pictures/yamaha.jpg" 	alt="x" />
+ 	</section>
+ 	<section class="three picture">
+  		<img class="indexpic left" 		src="pictures/kawasaki3.jpg" alt="x" />
+      
+        <img class="indexpic right" 	src="pictures/kawasaki2.jpg" alt="x" />
+    </section>
+
+</main>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
