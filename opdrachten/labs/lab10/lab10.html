@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/lab10.css">
+    <title>Lab10</title>
+  </head>
+  <body>
+
+    <form name="formulier" action="mailto: postmaster@alfacollege.com" method = "post">
+      <fieldset>
+        <legend>Inschrijfformulier</legend>
+        <select required naam="cursus" id="cursus">
+          <option value="0">Kies een cursus</option>
+          <option value="Bloemschikken">Bloemschikken</option>
+          <option value="Piano">Piano</option>
+          <option value="MBO">MBO</option>
+        </select><br>
+        <select required naam="lokatie" id="lokatie">
+          <option value="0">Kies een lokatie</option>
+          <option value="Boumaboulevard">Boumaboulevard</option>
+          <option value="SCN">SCN</option>
+        </select><br>
+        <label for="datum">Begindatum: </label><br>
+        <input required type="date" name="datum" id="datum" /><br>
+        <label for="geslacht">Selecteer Opleiding: </label>
+        BOL <input type="radio" name="opleiding" value="BOL" />
+        BBL <input type="radio" name="opleiding" value="BBL" /> <br>
+        <input required type="text" id="naam" name="naam" placeholder="Voornaam" /><br>
+        <input required type="text" id="anaam" name="anaam" placeholder="Achternaam" /><br>
+        <input required type="text" id="adres" name="adres" placeholder="Adres" /><br>
+        <input required type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats" /><br>
+        <input required type="email" id="email" name="email" placeholder="E-mail" /><br>
+        <input required type="text" id="mobiel" name="mobiel" placeholder="Mobiel" /><br>
+
+          <label for="Voorkeur">Geef je voorkeur aan:</label><br>
+          Avondschool:
+          <input type="checkbox" name="avondschool" id="avondschool" value="avondschool" /><br>
+          Weekendschool:
+          <input type="checkbox" name="weekendschool" id="weekendschool" value="weekendschool" /><br>
+          Geen voorkeur:
+          <input type="checkbox" name="geen" id="geen" value="geen" /><br>
+          <label for="ranking">Wat is je opleidingsniveau:</label><br>
+          <input type="range" name="niveau" id="niveau" min="1" max="5">
+      </fieldset>
+      <input type="submit" id="verzend" name="verzend" value="Verzend" />
+    </form>
+
+<!-- Yoram Spee 0144669 Klas: B-ITB4-1b -->
+
+  </body>
+</html>

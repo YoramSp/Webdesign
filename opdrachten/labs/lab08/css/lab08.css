@@ -1,0 +1,80 @@
+div{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 1.7rem;
+  color: aliceblue;
+}
+div.verticaal{
+  margin: 30px 20px 0 0;
+  transform:          skew(0,-30deg);
+  -ms-transform:      skew(0,-30deg);
+  -moz-transform:     skew(0,-30deg);
+  -o-transform:       skew(0,-30deg);
+  -webkit-transform:  skew(0,-30deg);
+}
+#een{
+  background-color: blue;
+  z-index: 1;
+  -webkit-animation-name: revolutie;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  animation-name: revolutie;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#twee{
+  background-color: red;
+  z-index: 2;
+  -webkit-animation-name: loop;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  animation-name: loop;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+#drie{
+  background-color: indigo;
+  z-index: 3;
+  -webkit-animation-name: schroef;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  animation-name: schroef;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  position: absolute  ;
+  top: 120px;
+  left: 120px;
+}
+@keyframes revolutie {
+  from {transform: rotatez(0deg);}
+  to {transform: rotatez(360deg);}
+}
+@keyframes loop {
+  from {transform: rotatez(0deg);}
+  to {transform: rotatez(360deg);}
+}
+@keyframes schroef {
+  from {transform: rotatez(0deg);}
+  to {transform: rotatez(360deg);}
+}

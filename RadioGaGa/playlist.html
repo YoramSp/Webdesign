@@ -1,0 +1,212 @@
+<!-- website RadioGaGa - Boek Frontend HS 1 -->
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="robots" content="all">
+    <meta name="language" content="dutch">
+    <meta name="author" content="Yoram">
+    <meta name="description" content="RadioGaGa marketing">
+    <meta name="keywords" content="RadioGaga, muziek, playlist">
+    <meta name="copyright" content="copyright">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Radio GaGa</title>
+
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+        <li><a href="formulier.html">Formulier</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="logo">
+
+    </div>
+
+    <main>
+      <div id="albums"> <!-- Begin albums -->
+        <ul>
+          <li>
+            <a onclick="document.getElementById('album-1').style.display='block';
+            document.getElementById('album-2').style.display='none';
+            document.getElementById('album-3').style.display='none';">
+            <img src="images/album-1.jpg"></a>
+          </li>
+            <li>
+              <a onclick="document.getElementById('album-1').style.display='none';
+              document.getElementById('album-2').style.display='block';
+              document.getElementById('album-3').style.display='none';">
+              <img src="images/album-2.jpg"></a>
+            </li>
+              <li>
+                <a onclick="document.getElementById('album-1').style.display='none';
+                document.getElementById('album-2').style.display='none';
+                document.getElementById('album-3').style.display='block';">
+                <img src="images/album-3.jpg"></a>
+              </li>
+            </ul>
+            </div> <!-- Einde albums -->
+      <div id="multimedia">
+        <div id="album-1" style='display: block'>
+          <video controls width="80%" preload poster="images/album-1.jpg">
+                <source src="videos/trailer.webm" type="video/webm"/>
+                <source src="videos/trailer.ogv" type="video/ogg"/>
+                <source src="videos/trailer.mp4" type="video/mp4"/>
+          </video>
+          <table>
+            <thead>
+              <tr>
+                <th>Track</th>
+                <th>Titel</th>
+                <th>Tijd</th>
+                <th>Play</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Titel 1</td>
+                <td>02:08</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Titel 2</td>
+                <td>03:18</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Titel 3</td>
+                <td>02:08</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+            </tbody>
+          </table>
+          <audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+          </audio>
+        </div> <!-- einde album-1 -->
+        <div id="album-2" style='display: none'>
+          <video controls width="80%" preload poster="images/album-2.jpg">
+                <source src="videos/trailer.webm" type="video/webm"/>
+                <source src="videos/trailer.ogv" type="video/ogg"/>
+                <source src="videos/trailer.mp4" type="video/mp4"/>
+          </video>
+          <table>
+            <thead>
+              <tr>
+                <th>Track</th>
+                <th>Titel</th>
+                <th>Tijd</th>
+                <th>Play</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Titel 1</td>
+                <td>02:08</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Titel 2</td>
+                <td>03:18</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Titel 3</td>
+                <td>02:08</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+            </tbody>
+          </table>
+          <audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+          </audio>
+        </div> <!-- einde album 2 -->
+        <div id="album-3" style='display: none'>
+          <video controls width="80%" preload poster="images/album-3.jpg">
+                <source src="videos/trailer.webm" type="video/webm"/>
+                <source src="videos/trailer.ogv" type="video/ogg"/>
+                <source src="videos/trailer.mp4" type="video/mp4"/>
+          </video>
+          <table>
+            <thead>
+              <tr>
+                <th>Track</th>
+                <th>Titel</th>
+                <th>Tijd</th>
+                <th>Play</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Titel 1</td>
+                <td>02:08</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Titel 2</td>
+                <td>03:18</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Titel 3</td>
+                <td>02:08</td>
+                <td><a onclick="document.getElementById('audio').src='muziek/2121.mp3';
+                  v=document.getElementById('audio');
+                  v.play();">|></a></td>
+              </tr>
+            </tbody>
+          </table>
+          <audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+          </audio>
+          </div> <!-- einde album 3 -->
+      </div> <!-- einde multimedia -->
+
+      <div id="pager">
+        <div id="vorige">
+          <a href="index.html"> < </a>
+        </div>
+      <div id="volgende">
+          <a href="formulier.html"> > </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="#top"><img src="images/twitter.png" alt="x" ></a>
+      <a href="#top"><img src="images/youtube.png" alt="x" ></a>
+      <a href="#top"><img src="images/facebook.png" alt="x" ></a>
+      <p>Copyright © 2017 <i>Ontworpen door Yoram Spee</i> Alle rechten voorbehouden. </p>
+    </footer>
+
+  </body>
+</html>
